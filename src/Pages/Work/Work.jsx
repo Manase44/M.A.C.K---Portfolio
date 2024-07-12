@@ -11,7 +11,7 @@ const Work = () => {
       <h1 id="heading">Work</h1>
       <div className="workspace">
         <div className="workspace-div">
-        <img src={component} alt="" className="image" />
+        <img src={delivery} alt="" className="image" />
 
 <div className="work-details">
   <h2>Designing Dashboard</h2>
@@ -48,7 +48,7 @@ const Work = () => {
       </div>
       <hr />
       <div className="workspace-div">
-        <img src={Malayams} alt="" className="image" />
+        <img src={component} alt="" className="image" />
         <div className="work-details">
           <h2>36 Days of Malayams type</h2>
           <section className="btn">
@@ -65,7 +65,7 @@ const Work = () => {
       </div>
       <hr />
       <div className="workspace-div">
-        <img src={delivery} alt="" className="image" />
+        <img src={Malayams} alt="" className="image" />
         <div className="work-details">
           <h2>Components</h2>
           <section className="btn">
