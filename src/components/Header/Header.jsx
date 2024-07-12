@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from "react-router-dom"
 export const Header = () => {
   return (
     <section className="Header">
@@ -7,9 +7,15 @@ export const Header = () => {
         <div className="navigation-list">
           <div className="navigation-links">
             <ol>
-              <li>Blog</li>
-              <li>Works</li>
-              <li>Contact</li>
+              <li>
+                <Link to="/blog">Blog</Link>
+              </li>
+              <li>
+                <Link to="/work">Works</Link>
+              </li>
+              <li>
+                Contact
+              </li>
             </ol>
           </div>
         </div>
