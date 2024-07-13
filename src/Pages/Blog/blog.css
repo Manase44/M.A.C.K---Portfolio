@@ -1,0 +1,55 @@
+.blog{
+   
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-section{
+   
+    padding: 20px;
+}
+.blog-heading{
+    
+    padding: 30px;
+    font-weight: 800;
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+}
+@media screen and (max-width : 600px) {
+    .main-section, .blog{
+        padding: 0%;
+    }
+}
+.blog-interactions{
+    
+    padding: 30px;
+}
+.blog-item{
+   
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+    max-width: 80%;
+}
+
+.handlebars{
+    color: gray;
+}
+.date{
+    color: black;
+    font-size: 15px;
+}
+.para{
+    font-size: 10px;
+}
+
+@media  screen and (max-width: 1280) {
+    .blog{
+        margin: auto;
+        width:80%;
+    }
+    
+}

@@ -11,7 +11,15 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     align-items: center;
+    
     justify-content: center;
+}
+@media screen and (max-width : 575px){
+    .workspace-div{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 .work-details{
