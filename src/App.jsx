@@ -4,6 +4,7 @@ import { Home } from './Pages/Home/Home';
 import Blog from './Pages/Blog/Blog';
 import Work from './Pages/Work/Work.jsx';
 import { Header } from "./components/Header/Header.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 function App() {
 
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path='/blog' element={<Blog/>}/>
       <Route path='/work' element={<Work/>}/>
      </Routes>
+     <Footer/>
      </BrowserRouter>
     </>
   )
