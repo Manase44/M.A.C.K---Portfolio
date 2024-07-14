@@ -25,3 +25,4 @@ const Footer = () => {
 }
 
 export default Footer
+>>>>>>> 9d2fe24e9b48282210933598773dbe44a7ca70f9
