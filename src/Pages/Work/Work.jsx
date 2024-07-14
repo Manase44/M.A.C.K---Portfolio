@@ -8,11 +8,11 @@ import potrait from "../../assets/potrait.jpeg";
 const Work = () => {
   return (
     <section>
-      <h1 id="heading">Work</h1>
+      
       <div className="workspace">
         <div className="workspace-div">
-        <img src={delivery} alt="" className="image" />
-
+        <div><h1 id="heading">Work</h1><img src={delivery} alt="" className="image" />
+        </div>
 <div className="work-details">
   <h2>Designing Dashboard</h2>
   <section className="btn">
@@ -20,9 +20,9 @@ const Work = () => {
     <p id="heads">Dashboard</p>
   </section>
   <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+    Lorem ipsum dolor sit amet consectetur adipisicing sit possimus<br></br> Adipisci
     autem vitae deleniti reprehenderit facilis, quibusdam tenetur sit
-    possimus. Maxime ad beatae sed, nulla libero reiciendis dolores
+    <br></br>Maxime ad beatae sed, nulla libero reiciendis dolores
     tempore fugiat
   </p>
 </div>
@@ -39,9 +39,8 @@ const Work = () => {
             <p id="heads">Illustration</p>
           </section>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            autem vitae deleniti reprehenderit facilis, quibusdam tenetur sit
-            possimus. Maxime ad beatae sed, nulla libero reiciendis dolores
+            Lorem ipsum dolor sit amet consectetur adipisicing sit possimus<br></br> Adipisci
+            autem vitae deleniti reprehenderit facilis, quibusdam tenetur .<br></br> Maxime ad beatae sed, nulla libero reiciendis dolores
             tempore fugiat
           </p>
         </div>
@@ -56,9 +55,8 @@ const Work = () => {
             <p id="heads">Typography</p>
           </section>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            autem vitae deleniti reprehenderit facilis, quibusdam tenetur sit
-            possimus. Maxime ad beatae sed, nulla libero reiciendis dolores
+            Lorem ipsum dolor sit amet consectetur adipisicing sit possimus<br></br> Adipisci
+            autem vitae deleniti reprehenderit facilis, quibusdam tenetur .<br></br> Maxime ad beatae sed, nulla libero reiciendis dolores
             tempore fugiat
           </p>
         </div>
@@ -73,9 +71,8 @@ const Work = () => {
             <p id="heads">Component Design</p>
           </section>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            autem vitae deleniti reprehenderit facilis, quibusdam tenetur sit
-            possimus. Maxime ad beatae sed, nulla libero reiciendis dolores
+            Lorem ipsum dolor sit amet consectetur adipisicing sit possimus<br></br> Adipisci
+            autem vitae deleniti reprehenderit facilis, quibusdam tenetur .<br></br> Maxime ad beatae sed, nulla libero reiciendis dolores
             tempore fugiat
           </p>
         </div>
