@@ -1,8 +1,12 @@
+header{
+    margin-bottom:3rem;
+}
 .navigation-list{
     padding: 1.2rem 4rem;
     display: flex;
     justify-content: end;
     gap: 1.5rem;
+   
 }
 .navigation-list li{
     list-style: none;
@@ -13,6 +17,24 @@
     font-weight: 600;
     color: inherit;
 }
+.hamburger-menu{
+    font-size: 27px;
+    cursor: pointer;
+    position: absolute;
+    right: 3rem;
+    top: 1rem;
+    display: none;
+}
 .active{
     color: red;
+}
+
+
+@media screen and (max-width:768px) {
+    .hamburger-menu{
+        display: block;
+    }
+    .navigation-list li{
+        display: none;
+    }
 }

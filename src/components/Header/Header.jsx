@@ -1,5 +1,7 @@
 import './Header.css';
 import { Link } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
+
 
 export const Header = () => {
   return (
@@ -17,6 +19,7 @@ export const Header = () => {
           </li>
         </ul>
       </nav>
+      <RxHamburgerMenu className='hamburger-menu'/>
     </header>
   );
 }
