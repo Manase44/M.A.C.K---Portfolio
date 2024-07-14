@@ -1,26 +1,28 @@
-import React from 'react'
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import "./footer.css"
+import './Footer.css';
+import { FaFacebookSquare, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 
-function Footer() {
+
+const Footer = () => {
   return (
-    <sector className="footer-section">
-      <div className="footer-details">
-        <div className="icon-holder-footer">
-          <FaFacebookSquare />
-          <FaInstagram />
-          <FaTwitter />
-          <FaLinkedin />
-        </div>
-        <div className="footer-paragraph">
-          <p>Copyright &copy; 2020 All rights reserved</p>
-        </div>
-      </div>
-    </sector>
-  );
+    <footer className='footer-section'>
+        <ul>
+            <li>
+                <FaFacebookSquare/>
+            </li>
+            <li>
+                <FaInstagram/>
+            </li>
+            <li>
+                <FaTwitter/>
+            </li>
+            <li>
+                <FaLinkedin/>
+            </li>
+        </ul>
+        <p>Copyright &copy; All rights reserved</p>
+    </footer>
+  )
 }
 
 export default Footer
+>>>>>>> 9d2fe24e9b48282210933598773dbe44a7ca70f9
