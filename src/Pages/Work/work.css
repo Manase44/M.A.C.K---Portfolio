@@ -1,7 +1,7 @@
 .workspace{
     display: flex;
     flex-direction: column;
-    width: 68%;
+    width: 80%;
     margin: auto;
 }
 
@@ -11,7 +11,15 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     align-items: center;
+    
     justify-content: center;
+}
+@media screen and (max-width : 575px){
+    .workspace-div{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 .work-details{
@@ -38,17 +46,18 @@
     padding-right: 7px;
 }
 .image{
-width: 280px;
-height: 100px;
+width: 200px;
+height: 120px;
 border: 2px solid saddlebrown;
 border-radius: 4px;
 }
 #heading{
     display: flex;
-    align-items: center;
-    justify-content: left;
+    align-items: center; 
+    justify-content: center;
     margin: auto;
-    width: 70%;
+    width: 80%;
+    padding-bottom: 0.5rem;
 }
 #heads{
     color: gray;
