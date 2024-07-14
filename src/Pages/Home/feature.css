@@ -1,0 +1,62 @@
+.workspace {
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+    margin: auto;
+}
+
+.workspace-div {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-details {
+    display: block;
+}
+
+.work-details p {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: flex;
+    gap: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.btn button {
+    font: 600;
+    font-size: 0.8rem;
+    background-color: #131842;
+    border-radius: 12px;
+    color: #eeeeee;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.image {
+    width: 280px;
+    height: 100px;
+    border: 2px solid saddlebrown;
+    border-radius: 4px;
+}
+
+#heading {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: auto;
+    width: 70%;
+}
+
+#heads {
+    color: gray;
+    font-weight: 800;
+}

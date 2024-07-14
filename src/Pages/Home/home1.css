@@ -1,29 +1,30 @@
-.intro-section{
+.intro-section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 1rem;
-    border: 2px solid red;
 }
-.textbox-side{
+
+.textbox-side {
     width: 65vh;
-    border: 2px solid rebeccapurple;
     display: grid;
     place-content: center;
     gap: 2rem;
     padding: 10px;
 }
 
-.main-text{
-    font-size: 20px;
+.main-text {
+    font-size: 30px;
     text-transform: capitalize;
     font-weight: bold;
     letter-spacing: 1px;
 }
-.sub-text{
+
+.sub-text {
     font-size: 15px;
 }
-button{
+
+.home-button {
     background-color: rgb(247, 87, 87);
     color: #fff;
     border-radius: 2px;
@@ -31,10 +32,16 @@ button{
     border: none;
     width: 40%;
 }
-.home-image-holder{
-    height: 50vh;
+
+.home-image-holder {
+    height: 40vh;
 }
-img{
+.image-side{
+    display: grid;
+    place-content: center;
+}
+
+img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
