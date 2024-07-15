@@ -8,11 +8,11 @@ import potrait from "../../assets/potrait.jpeg";
 const Work = () => {
   return (
     <section>
-     
+               <h1 data-testid="heading" id="heading">work</h1>
+
       <div className="workspace">
         <div className="workspace-div">
           <div>
-          <h1 data-testid="heading" id="heading">work</h1>
             <img src={delivery} alt="" className="image" />
           </div>
           <div className="work-details">
