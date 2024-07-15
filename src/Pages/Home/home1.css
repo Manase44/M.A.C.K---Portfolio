@@ -4,6 +4,11 @@
     justify-content: space-around;
     gap: 1rem;
 }
+@media screen and (max-width:23.4375em) {
+    .intro-section {
+        flex-direction: column-reverse
+    }
+}
 
 .textbox-side {
     width: 65vh;
