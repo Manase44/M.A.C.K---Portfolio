@@ -1,25 +1,25 @@
-import React from 'react'
-import {Link} from "react-router-dom"
+import './header.css';
+import { Link } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
+
+
 export const Header = () => {
   return (
-    <section className="Header">
-      <div className="navigation">
-        <div className="navigation-list">
-          <div className="navigation-links">
-            <ol>
-              <li>
-                <Link to="/blog">Blog</Link>
-              </li>
-              <li>
-                <Link to="/work">Works</Link>
-              </li>
-              <li>
-                Contact
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </section>
+    <header className="Header">
+      <nav className="navigation">
+        <ul className='navigation-list'>
+          <li>
+            <Link to="/blog">blog</Link>
+          </li>
+          <li>
+            <Link to="/work">works</Link>
+          </li>
+          <li>
+            <Link>contact</Link>
+          </li>
+        </ul>
+      </nav>
+      <RxHamburgerMenu className='hamburger-menu'/>
+    </header>
   );
 }
