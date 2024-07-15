@@ -6,14 +6,16 @@
 .main-section{
    
     padding: 20px;
+    
 }
 .blog-heading{
     
     padding: 30px;
     font-weight: 800;
     width: 100%;
-    max-width: 80%;
+    max-width: 60%;
     margin: auto;
+    
 }
 @media screen and (max-width : 600px) {
     .main-section, .blog{
@@ -23,20 +25,26 @@
 .blog-interactions{
     
     padding: 30px;
+   
+    display: flex;
+    flex-direction: column;
 }
 .blog-item{
    
     display: flex;
     flex-direction: column;
+    justify-content: center;
     row-gap: 1em;
     padding: 10px;
     margin: auto;
     width: 100%;
-    max-width: 80%;
+    max-width: 60%;
+    
 }
 
 .handlebars{
     color: gray;
+    
 }
 .date{
     color: black;
