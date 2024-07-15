@@ -8,10 +8,11 @@ import potrait from "../../assets/potrait.jpeg";
 const Work = () => {
   return (
     <section>
-      <h1 data-testid="heading" id="heading">work</h1>
+     
       <div className="workspace">
         <div className="workspace-div">
           <div>
+          <h1 data-testid="heading" id="heading">work</h1>
             <img src={delivery} alt="" className="image" />
           </div>
           <div className="work-details">
@@ -72,9 +73,8 @@ const Work = () => {
               <p data-testid="head" id="heads">Component Design</p>
             </section>
             <p data-testid="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-              autem vitae deleniti reprehenderit facilis, quibusdam tenetur sit
-              possimus. Maxime ad beatae sed, nulla libero reiciendis dolores
+              Lorem ipsum dolor sit amet consectetur adipisicing  sit possimus<br></br>. Adipisci
+              autem vitae deleniti reprehenderit facilis, quibusdam tenetur<br></br> Maxime ad beatae sed, nulla libero reiciendis dolores
               tempore fugiat
             </p>
           </div>

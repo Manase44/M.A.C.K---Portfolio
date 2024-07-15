@@ -57,6 +57,7 @@ border-radius: 4px;
     margin: auto;
     width: 80%;
     padding-bottom: 0.5rem;
+    justify-content: center;
 }
 #heads{
     color: gray;
