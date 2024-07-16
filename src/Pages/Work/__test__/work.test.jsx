@@ -10,7 +10,6 @@ describe("Work Componet Testing", () => {
   })
   test('should render the section heading as "work"', () => {
     render(<Work />)
-    screen.logTestingPlaygroundURL()
     const sectionHeading = screen.getByRole('heading', {name: /work/i});
     expect(sectionHeading).toHaveTextContent(/work/i);
   })
