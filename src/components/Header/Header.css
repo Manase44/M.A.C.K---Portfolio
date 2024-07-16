@@ -1,23 +1,35 @@
-header{
-    margin-bottom:3rem;
+header {
+    margin-bottom: 3rem;
+    position: relative;
 }
-.navigation-list{
+
+.navigation-list {
     padding: 1.2rem 4rem;
     display: flex;
     justify-content: end;
     gap: 1.5rem;
-   
+
 }
-.navigation-list li{
+
+.navigation-list li, .hamburger-menu-list li {
     list-style: none;
 }
-.navigation-list li a{
+
+.navigation-list li a,.hamburger-menu-list li a {
     text-transform: capitalize;
     text-decoration: none;
     font-weight: 600;
     color: inherit;
 }
-.hamburger-menu{
+
+.navigation-list li a.active, .hamburger-menu-list li a.active{
+    color: var(--orange-color);
+}
+.drop-down{
+    background-color: blue;
+}
+
+.hamburger-menu {
     font-size: 27px;
     cursor: pointer;
     position: absolute;
@@ -25,16 +37,95 @@ header{
     top: 1rem;
     display: none;
 }
-.active{
-    color: red;
+.hamburger-menu:hover{
+    color: var(--orange-color);
 }
 
+dialog {
+    border: none;
+    width: 30vw;
+    padding:1rem 2rem;
+    position: absolute;
+    background-color:#ffffff;
+    top: 1rem;
+    left: 30rem;
+}
+.dialog-close{
+    display: flex;
+    justify-content: end;
+}
+.dialog-close svg{
+    font-size: 27px;
+    cursor: pointer;
+}
+.dialog-close svg:hover{
+    fill: var(--orange-color);
+}
+.hamburger-menu-list {
+    display: grid;
+    gap: 1rem;
+}
 
+@media screen and (min-width:768px) {
+    dialog{
+        display: none;
+    }
+}
 @media screen and (max-width:768px) {
-    .hamburger-menu{
+    .hamburger-menu {
         display: block;
     }
-    .navigation-list li{
+
+    .navigation-list li {
         display: none;
+    }
+}
+
+@media screen and (max-width:700px) {
+    dialog{
+        left: 28rem;
+    }
+}
+@media screen and (max-width:650px) {
+    dialog{
+        left: 26rem;
+    }
+}
+@media screen and (max-width:600px) {
+    dialog{
+        left: 24rem;
+    }
+}
+@media screen and (max-width:550px) {
+    dialog{
+        left: 22rem;
+    }
+}
+@media screen and (max-width:500px) {
+    dialog{
+        left: 19rem;
+    }
+}
+@media screen and (max-width:450px) {
+    dialog{
+        left: 5rem;
+        width: 50vw;
+    }
+}
+@media screen and (max-width:300px) {
+    dialog{
+        left: 2rem;
+        width: 70vw;
+    }
+}
+@media screen and (max-width:200px) {
+    dialog{
+        left: .5rem;
+        width: 90vw;
+    }
+}
+@media screen and (max-width:576px) {
+    .hamburger-menu {
+        right: 1rem;
     }
 }
