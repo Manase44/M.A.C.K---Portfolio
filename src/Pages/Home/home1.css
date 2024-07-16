@@ -1,21 +1,33 @@
+.home-section{
+    padding: 0 7rem;
+    margin-bottom: 50px;
+}
+
 .intro-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
-@media screen and (max-width:23.4375em) {
+@media screen and (max-width:45.4375em) {
     .intro-section {
         flex-direction: column-reverse
     }
 }
 
 .textbox-side {
-    width: 65vh;
+    width: 70%;
     display: grid;
     place-content: center;
     gap: 2rem;
-    padding: 10px;
+    
+   
+}
+@media screen and (max-width:35.4375em) {
+    .textbox-side{
+        gap: 1rem;
+        margin: auto;
+    }
 }
 
 .main-text {
@@ -24,30 +36,71 @@
     font-weight: bold;
     letter-spacing: 1px;
 }
+@media screen and (max-width:45.4375em) {
+    .main-text {
+        font-size:20px;
+    }
+}
 
 .sub-text {
     font-size: 15px;
 }
-
+@media screen and (max-width:35.4375em) {
+    .sub-text {
+        font-size: 10px;
+    }
+}
 .home-button {
-    background-color: rgb(247, 87, 87);
+    /* background-color: rgb(247, 87, 87); */
+    background-color: var(--orange-color);
     color: #fff;
     border-radius: 2px;
     padding: 10px;
     border: none;
     width: 40%;
 }
+@media screen and (max-width:45.4375em) {
+        .home-button {
+          margin: auto;
+        padding: 7px;
+        width: 60%;
+    }
+}
+
+.image-side {
+    display: flex;
+    justify-content: end;
+    width: 30%;
+    /* border: 2px solid red; */
+    margin: auto;
+
+}
+@media screen and (max-width:23.4375em) {
+    .image-side {
+        width: 100%;
+    }
+}
 
 .home-image-holder {
-    height: 40vh;
-}
-.image-side{
+    height: 12rem;
+    width:12rem;
+    border-radius: 50%;
+    overflow: hidden;
     display: grid;
     place-content: center;
+    /* border: 2px solid black; */
 }
+/* @media screen and (max-width:23.4375em) {
+    .home-image-holder{
+        height: 500px;
+            width: 500px;
+            border-radius: none;
+    }
+} */
 
 img {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    object-fit: cover;
+   
 }
