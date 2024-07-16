@@ -4,11 +4,12 @@ import Home1 from "../Home1";
 import About from "../About";
 import Features from "../Features";
 
-describe('Home component testing', () => {
+describe('Hero component testing', () => {
     test('should render a heading in the home hero section', () => {
-        render(<Home1 />)
-        const mainHeading = screen.getByRole('heading')
+        render(<Home1 />);
+        const mainHeading = screen.getByRole('heading');
         expect(mainHeading).toBeInTheDocument();
+        expect(mainHeading).toBeVisible();
     })
     test('should render " Hi, I am John, Creative Technologist" as the hero section headingn', () => {
         render(<Home1 />)
@@ -17,8 +18,14 @@ describe('Home component testing', () => {
     })
     test('should render a download resume button', () => {
         render(<Home1 />)
-        const button = screen.getByRole('button')
+        const button = screen.getByRole('link')
         expect(button).toBeInTheDocument();
+    })
+
+    test('should render a download resume button with the text download resume', () => {
+        render(<Home1 />)
+        const button = screen.getByRole('link')
+        expect(button).toHaveTextContent(/download resume/i)
     })
     test('should render a description paragraph', () => {
         render(<Home1 />)
@@ -27,11 +34,6 @@ describe('Home component testing', () => {
         expect(paragraph).toBeVisible();
     })
 
-    test('should render a download resume button with the text download resume', () => {
-        render(<Home1 />)
-        const button = screen.getByRole('button')
-        expect(button).toHaveTextContent(/download resume/i)
-    })
     test('should render an image', () => {
         render(<Home1 />)
         const image = screen.getByRole('img')

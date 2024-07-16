@@ -2,7 +2,6 @@ import React from "react";
 import profile from "../../assets/image2.jpg";
 import "./home1.css";
 import resume from '../../assets/resume.pdf';
-import { Link } from "react-router-dom";
 
 const Home1 = () => {
   return (
@@ -22,7 +21,7 @@ const Home1 = () => {
               tempore fugiat
             </p>
           </div>
-          <Link to={resume} target="_blank" className="home-button">Download Resume</Link>
+          <a  href={resume} target="_blank" className="home-button">Download Resume</a>
         </div>
         <div className="image-side">
           <div className="home-image-holder">
