@@ -12,7 +12,7 @@ const Home1 = () => {
             </h1>
           </div>
           <div className="sub-text">
-            <p>
+            <p data-testid="subject-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
               autem vitae deleniti reprehenderit facilis, quibusdam tenetur sit
               possimus. Maxime ad beatae sed, nulla libero reiciendis dolores
