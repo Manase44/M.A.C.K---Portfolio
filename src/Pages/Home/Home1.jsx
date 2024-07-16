@@ -1,6 +1,6 @@
 import React from "react";
-import profile from "../../assets/profile.jpg";
-import "./home.css";
+import profile from "../../assets/image2.jpg";
+import "./home1.css";
 const Home1 = () => {
   return (
     <section className="home-section">
@@ -8,7 +8,7 @@ const Home1 = () => {
         <div className="textbox-side">
           <div className="main-text">
             <h1>
-              Hi, I am John, Creative Technologist
+              Hi, I am John, <br/>Creative Technologist
             </h1>
           </div>
           <div className="sub-text">
