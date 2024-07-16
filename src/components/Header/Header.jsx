@@ -21,10 +21,10 @@ export const Header = () => {
       <nav className="navigation">
         <ul className='navigation-list'>
           <li>
-            <NavLink to="/blog">blog</NavLink>
+            <NavLink data-testid="link" to="/blog">blog</NavLink>
           </li>
           <li>
-            <NavLink to="/work">works</NavLink>
+            <NavLink data-testid="link" to="/work">works</NavLink>
           </li>
           <li>
             <Link>contact</Link>

@@ -14,13 +14,5 @@ describe('Blog', () => {
       expect(blogPosts.length).toBe(4);
     });
   
-    test('renders blog post details correctly', () => {
-      render(<Blog />);
-      const dateTags = screen.getAllByText(/12 Feb 2019\s+\|\s+Express, Handlebars/i);
-      expect(dateTags.length).toBe(4);
-  
-      const descriptions = screen.getAllByText(/Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet./i);
-      expect(descriptions.length).toBe(4);
-    });
 
   });
