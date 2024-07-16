@@ -1,8 +1,14 @@
-.workspace {
+.featured-work-section{
+    padding:1rem 7rem ;
+
+}
+
+.featured-workspace {
     display: flex;
     flex-direction: column;
-    width: 68%;
+    width: 100%;
     margin: auto;
+    /* border: 2px solid red; */
 }
 
 .workspace-div {

@@ -1,14 +1,15 @@
 import React from "react";
-import "../Work/work.css"
+// import "../Work/work.css"
+import "./feature.css"
 import component from "../../assets/component.jpeg";
 import delivery from "../../assets/delivery.jpeg";
 import potrait from "../../assets/potrait.jpeg";
 
 const Features = () => {
   return (
-    <section>
-      <h1 id="heading">Featured work</h1>
-      <div className="workspace">
+    <section className="featured-work-section">
+      <p className="section-subheading">Featured work</p>
+      <div className="featured-workspace">
         <div className="workspace-div">
           <img src={delivery} alt="delivery" className="image" />
 

@@ -1,51 +1,51 @@
 
-import "./blog.css"
-import React from 'react'
+
+import React from 'react';
+import './blog.css';
 
 const Blog = () => {
+  const blogPosts = [
+    {
+      title: 'UI Interactions of the week',
+      date: '12 Feb 2019',
+      tags: 'Express, Handlebars',
+      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'
+    },
+    {
+      title: 'UI Interactions of the week',
+      date: '12 Feb 2019',
+      tags: 'Express, Handlebars',
+      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'
+    },
+    {
+      title: 'UI Interactions of the week',
+      date: '12 Feb 2019',
+      tags: 'Express, Handlebars',
+      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'
+    },
+    {
+      title: 'UI Interactions of the week',
+      date: '12 Feb 2019',
+      tags: 'Express, Handlebars',
+      description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'
+    }
+  ];
+
   return (
-   <section className="main-section">
-     <div className="blog ">
-       
-       <div className="blog-heading">
-         <h1>Blog</h1>
-       </div>
-       <div className="blog-interactions">
-         <div className="blog-item">
-           <h3>UI Interactions of the week</h3>
-           <p>12 Feb 2019 | <span className="handlebars">express handlebars</span></p>
-           <p className="para">armet minim moliit non doserunt uilamko est sit aliqua dolor do ament sint.Velit officia<br/> consequant duis enim Velit
-             mollit.Exercitation veniam consequant sunt nostrud amet.
-           </p>
-         </div>
+    <div className="blog-list">
+      <h1>Blog</h1>
+      {blogPosts.map((post, index) => (
+        <div key={index} className="blog-post">
+          <h2>{post.title}</h2>
+          <p className="blog-date-tags">
+            <span className="date-setter">{post.date}</span> | <span>{post.tags}</span>
+          </p>
+          <p className="blog-description">{post.description}</p>
+        </div>
+      ))}
 
-         <div className="blog-item">
-           <h3>UI Interactions of the week</h3>
-           <p>12 Feb 2019 | <span className="handlebars">express handlebars</span></p>
-           <p className="para">armet minim moliit non doserunt uilamko est sit aliqua dolor do ament sint.Velit officia<br/> consequant duis enim Velit
-             mollit.Exercitation veniam consequant sunt nostrud amet.
-           </p>
-         </div>
-
-         <div className="blog-item">
-           <h3>UI Interactions of the week</h3>
-           <p>12 Feb 2019 | <span className="handlebars">express handlebars</span></p>
-           <p className="para">armet minim moliit non doserunt uilamko est sit aliqua dolor do ament sint.Velit officia<br/> consequant duis enim Velit
-             mollit.Exercitation veniam consequant sunt nostrud amet.
-           </p>
-         </div>
-         <div className="blog-item">
-           <h3>UI Interactions of the week</h3>
-           <p>12 Feb 2019 | <span className="handlebars">express handlebars</span></p>
-           <p className="para">armet minim moliit non doserunt uilamko est sit aliqua dolor do ament sint.Velit officia<br/> consequant duis enim Velit
-             mollit.Exercitation veniam consequant sunt nostrud amet.
-           </p>
-         </div>
-       </div>
-       
-     </div>
-   </section>
-  )
-}
+    </div>
+  );
+};
 
 export default Blog;
