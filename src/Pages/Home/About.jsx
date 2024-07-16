@@ -6,10 +6,10 @@ function About() {
       <div className="about">
         <div className="heading">
           <p className="section-subheading">Recent posts </p>
-          <a href="">View All </a>
+          <a href="#">View All </a>
         </div>
         <div className="card-holders">
-          <div className="card">
+          <div data-testid="card" className="card">
             <div className="card-1">
               <div className="title">
                 <h2>Making a design system from scratch</h2>
@@ -28,7 +28,7 @@ function About() {
             </div>
           </div>
 
-          <div className="card">
+          <div data-testid="card"  className="card">
             <div className="card-1">
               <div className="title">
                 <h2>Creating pixel perfect icons in Figma</h2>

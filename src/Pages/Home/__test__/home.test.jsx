@@ -40,13 +40,34 @@ describe('Home component testing', () => {
     })
 })
 
-// describe('About component testing', () => {
-//   test('should render the section heading', () => {
-//     render(<About/>)
-//     const heading = screen.
-//   })
-  
-// })
+describe('About component testing', () => {
+  test('should render the section heading', () => {
+    render(<About/>)
+    const heading = screen.getByText(/recent posts/i)
+    expect(heading).toBeInTheDocument();
+    expect(heading).toBeVisible();
+  })
+  test('should render a view all link', () => {
+    render(<About/>)
+    const link = screen.getByRole("link")
+    expect(link).toBeInTheDocument();
+    expect(link).toBeVisible();
+  })
+  test('should render a link with text "view all"', () => {
+    render(<About/>)
+    const link = screen.getByRole("link")
+    expect(link).toHaveTextContent(/view all/i);
+  })
+  test('should render at most two cards in the about section"', () => {
+    render(<About/>)
+    const cards = screen.getAllByTestId("card");
+    expect(cards.length).toBeLessThanOrEqual(2);
+    cards.forEach((card) => {
+        expect(card).toBeInTheDocument();
+        expect(card).toBeVisible();
+    })
+  })
+})
 
 
 describe('Feature component testing', () => {
@@ -77,7 +98,5 @@ describe('Feature component testing', () => {
             expect(heading).toBeVisible();
         })
     })
-   
-
 
 })
