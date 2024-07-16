@@ -22,9 +22,9 @@ const Work = () => {
               <p  data-testid="head" id="heads">Dashboard</p>
             </section>
             <p data-testid="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing sit possimus<br></br> Adipisci
+              Lorem ipsum dolor sit amet consectetur adipisicing sit possimus Adipisci
               autem vitae deleniti reprehenderit facilis, quibusdam tenetur sit
-              <br></br>Maxime ad beatae sed, nulla libero reiciendis dolores
+              Maxime ad beatae sed, nulla libero reiciendis dolores
               tempore fugiat
             </p>
           </div>
@@ -41,8 +41,8 @@ const Work = () => {
               <p  data-testid="head" id="heads">Illustration</p>
             </section>
             <p data-testid="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing sit possimus<br></br> Adipisci
-              autem vitae deleniti reprehenderit facilis, quibusdam tenetur .<br></br> Maxime ad beatae sed, nulla libero reiciendis dolores
+              Lorem ipsum dolor sit amet consectetur adipisicing sit possimus Adipisci
+              autem vitae deleniti reprehenderit facilis, quibusdam tenetur . Maxime ad beatae sed, nulla libero reiciendis dolores
               tempore fugiat
             </p>
           </div>
@@ -57,8 +57,8 @@ const Work = () => {
               <p  data-testid="head" id="heads">Typography</p>
             </section>
             <p data-testid="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing sit possimus<br></br> Adipisci
-              autem vitae deleniti reprehenderit facilis, quibusdam tenetur .<br></br> Maxime ad beatae sed, nulla libero reiciendis dolores
+              Lorem ipsum dolor sit amet consectetur adipisicing sit possimus Adipisci
+              autem vitae deleniti reprehenderit facilis, quibusdam tenetur . Maxime ad beatae sed, nulla libero reiciendis dolores
               tempore fugiat
             </p>
           </div>
@@ -73,8 +73,8 @@ const Work = () => {
               <p data-testid="head" id="heads">Component Design</p>
             </section>
             <p data-testid="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing  sit possimus<br></br>. Adipisci
-              autem vitae deleniti reprehenderit facilis, quibusdam tenetur<br></br> Maxime ad beatae sed, nulla libero reiciendis dolores
+              Lorem ipsum dolor sit amet consectetur adipisicing  sit possimus. Adipisci
+              autem vitae deleniti reprehenderit facilis, quibusdam tenetur Maxime ad beatae sed, nulla libero reiciendis dolores
               tempore fugiat
             </p>
           </div>
