@@ -17,6 +17,9 @@ header{
     font-weight: 600;
     color: inherit;
 }
+.navigation-list li a.active{
+    color: var(--orange-color);
+}
 .hamburger-menu{
     font-size: 27px;
     cursor: pointer;
@@ -24,9 +27,6 @@ header{
     right: 3rem;
     top: 1rem;
     display: none;
-}
-.active{
-    color: red;
 }
 
 

@@ -1,5 +1,5 @@
 import './Header.css';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 
@@ -9,10 +9,10 @@ export const Header = () => {
       <nav className="navigation">
         <ul className='navigation-list'>
           <li>
-            <Link to="/blog">blog</Link>
+            <NavLink to="/blog">blog</NavLink>
           </li>
           <li>
-            <Link to="/work">works</Link>
+            <NavLink to="/work">works</NavLink>
           </li>
           <li>
             <Link>contact</Link>
